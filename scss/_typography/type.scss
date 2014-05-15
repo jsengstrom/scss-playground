@@ -1,0 +1,23 @@
+// GLOBAL TYPOGRAPHY --------------------- //
+
+// This file is the basic type setup for the project.
+// It is imported to 'global.scss' and does not compile directly.
+
+body,html { @extend %font-stack; }
+
+h1, h2, h3, h4, h5, h6, b, strong { font-weight:bold; }
+
+h1 { font-size: $heading_1; }
+h2 { font-size: $heading_2; }
+h3 { font-size: $heading_3; }
+h4 { font-size: $heading_4; }
+h5 { font-size: $heading_5; }
+h6 { font-size: $heading_6; }
+
+em { font-style:italic; }
+
+a {
+  color:$primary_color;
+  text-decoration:underline;
+  &:hover { color: darken($primary_color, 10%); }
+}

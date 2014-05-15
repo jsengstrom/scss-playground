@@ -1,0 +1,35 @@
+// GLOBAL MANIFEST --------------------- //
+
+// This is the manifest file. Here we import all of our other scss files
+// ready to compile. This is the only file that is processed.
+
+// This file will out put to the following path (reletive to your project root): build/css/global.min.css
+
+//--------------------------------//
+
+// CONFIG //
+@import "_config";                 // First import your config files (all the variables)
+
+// FRAMEWORKS //
+@import "bourbon";                 // bourbon is a lightweight Sass library of mixins
+@import "_frameworks/mixins";      // our custom mixins file
+@import "_frameworks/reset";       // our reset
+@import "_frameworks/silent";      // or project agnostic silent classes
+
+// TYPOGRAPHY //
+@import "_typography/fonts.scss";  // our google fonts (if we have them)
+@import "_typography/type.scss";   // our basic typography settings
+
+// MODULES //                      // Finally we import our individual modules
+
+@import "_modules/header.scss";
+@import "_modules/nav.scss";
+@import "_modules/main.scss";
+@import "_modules/section.scss";
+@import "_modules/article.scss";
+@import "_modules/aside.scss";
+@import "_modules/forms.scss";
+@import "_modules/footer.scss";
+
+
+//--------------------------------//

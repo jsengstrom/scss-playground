@@ -1,0 +1,61 @@
+// PROJECT CONFIG --------------------- //
+
+// This config file contains all the variables that we use in each project
+// such as font sizes, leading, colors and breakpoints. To start things off
+// just add edit the commented variables with your project fonts and colors.
+
+// This file is imported to 'global.scss' and does not compile directly.
+
+//--------------------------------//
+
+// TYPOGRAPHY SETTINGS
+// Set up the project font sizes and font families below - you can add google fonts to the '_typography/fonts.scss' file
+
+$font_size: 16px;
+
+$heading_1: 2em;
+$heading_2: 1.8em;
+$heading_3: 1.6em;
+$heading_4: 1.4em;
+$heading_5: 1.4em;
+$heading_6: 1.4em;
+
+$small_font: 0.875em;
+$large_font: 2em;
+
+$line_height: 1.6em;
+
+$primary_font:    /* font name */, sans-serif; // this is a mandatory option
+$secondary_font:  /* font name */, sans-serif; // this is not mandatory, delete the line if you don't need it
+
+//--------------------------------//
+
+// COLOR SCHEME SETTINGS
+// Add your main 2 or 3 colors for the project here
+
+$primary_color:   /* hexcode */; // this is a mandatory option
+$secondary_color: /* hexcode */; // this is not mandatory, delete the line if you don't need it
+$tertiary_color:  /* hexcode */; // this is not mandatory, delete the line if you don't need it
+
+$white: #ffffff;
+$grey:  #444444;
+
+//--------------------------------//
+
+// LAYOUT SETTINGS
+// These are your breakpoints, used for the media query mixin
+
+$viewport_palm: 500px;
+$viewport_lap:  800px;
+$viewport_desk: 1024px;
+
+//--------------------------------//
+
+// FILE PATHS
+// The path from your **COMPILED CSS** file to the relevent folders.
+
+$public_path:     "../../";
+$image_directory: "../../img/";
+$font_directory:  "../../fonts/";
+
+//--------------------------------//

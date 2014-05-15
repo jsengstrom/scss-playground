@@ -1,0 +1,45 @@
+// SILENT CLASSES --------------------- //
+
+// This is a grounp of frequently used, project agnositic extends to include into
+// all your sass projects.
+
+// This file is imported to 'global.scss' and does not compile directly.
+
+
+//--------------------------------//
+
+//CLEARFIX - Apply to any element by adding '@extend %cf;' to any selector.
+
+%cf {
+  *zoom: 1;
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+  &:after { clear: both; }
+}
+
+//--------------------------------//
+
+//VERTIAL ALIGN - Apply to  any element by adding '@extend %va;' to any selector.
+
+%va {
+  position: relative;
+  top:50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+//--------------------------------//
+
+//FONT STACK  - The basic font stack using values from '_config.scss'
+
+%font-stack {
+  font-family:$primary_font;
+  font-size:$font_size;
+  line-height:$line_height;
+}
+
+//--------------------------------//
